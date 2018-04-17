@@ -1,0 +1,65 @@
+/*General queries at the start - same for all sizes*/
+.box {
+    border: 1px solid black;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    vertical-align: top;
+    
+}
+
+/*put code underneath for code that changes depending on the viewport*/
+/*if statement: (in this case for a small screen)*/
+@media (max-width: 767px) {
+    .mobile{
+        background-image: url('https://pm1.narvii.com/6401/8c9acb4cd89b0942b930295ec05a143d0456ff98_hq.jpg');
+        background-size:100% 100%;
+        border: none;
+    }
+    
+    .tablet{
+        display: none;
+    }
+    
+    .desktop{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mobile{
+        display: none;
+    }
+    
+    .desktop{
+        display: none;
+    }
+    
+    .tablet{
+        background-image: url('https://img00.deviantart.net/6b03/i/2002/33/4/d/open_book.jpg');
+        background-size: 100% 100%;
+        height: 400px;
+        width: 400px;
+        border-radius: 50px;
+    }
+}
+
+@media (min-width: 992px){
+    .mobile{
+        display: none;
+    }
+    
+    .tablet{
+        display: none;
+    }
+    
+    .desktop{
+        background-image: url('https://viralsweep.com/blog/wp-content/uploads/2015/02/unsplash.jpg');
+        background-size: 100% 100%;
+        height: 600px;
+        width: 600px;
+        border-radius: 500px;
+        border: 10px dashed blue;
+    }
+}

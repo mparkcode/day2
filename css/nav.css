@@ -1,0 +1,46 @@
+nav ul li a{
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+nav ul li{
+    /*border-bottom: 1px solid #444;*/
+    background-color: #1D2026;
+    font-size: 30px;
+    padding: 10px 5px;
+}
+
+nav ul li:hover{
+    background-color: #555;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+body{
+    background-color: #292E37;
+}
+
+
+
+@media (min-width: 768px) {
+    nav ul li{
+        display: inline-block;
+        font-size: 20px;
+        width: 120px;
+    }
+    
+    nav{
+        /*font-size of zero will reduce space between a elements*/
+        font-size: 0;
+    }
+    
+    nav ul{
+        background-color: #1D2026
+    }
+}
+

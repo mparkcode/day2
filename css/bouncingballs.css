@@ -1,12 +1,50 @@
 .ball{
+    width: 50px;
+    height: 50px;
     border: 1px solid black;
     border-radius: 50%;
 }
 
 .ball1{
-    width: 50px;
-    height: 50px;
     background-color: yellow;
     left: 20%;
     top: 20%;
+    position: absolute;
+    animation: bouncingball 4s linear infinite;
+}
+
+.ball2{
+    background-color: red;
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    animation: bouncingball2 3s linear infinite;
+}
+
+/*@keyframes bouncingball {*/
+/*    0% {top: 20%;}*/
+/*    40% {top: 60%; transform: none;}*/
+/*    50% {top: 70%; transform: scale(1.5,1)}*/
+/*    100% {top: 20%;}*/
+/*}*/
+
+@keyframes bouncingball {
+    0% {top: 25%;}
+    20% {top: 60%; transform:none;}
+    25% {top: 70%; left: 55%; transform: scale(1.5,0.75)}
+    50% {top: 25%; left: 70%; transform: none}
+    70% {top: 60%; transform:none;}
+    75% {top: 70%; left: 55%; transform: scale(1.5,0.75)}
+    100% {top: 25%;}
+}
+
+
+@keyframes bouncingball2 {
+    0% {top: 25%;}
+    20% {top: 60%; transform:none;}
+    25% {top: 70%; left: 55%; transform: scale(1.5,0.75)}
+    50% {top: 25%; left: 60%; transform: none}
+    70% {top: 60%; transform:none;}
+    75% {top: 70%; left: 55%; transform: scale(1.5,0.75)}
+    100% {top: 25%;}
 }

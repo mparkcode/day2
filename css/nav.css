@@ -10,6 +10,8 @@ nav ul li{
     background-color: #1D2026;
     font-size: 30px;
     padding: 10px 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 nav ul li:hover{

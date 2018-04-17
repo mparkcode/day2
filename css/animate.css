@@ -1,0 +1,24 @@
+.box{
+    background: linear-gradient(to bottom, red, white);
+    height: 200px;
+    width: 200px;
+    left: 80%;
+    top: 20%;
+    position: absolute;
+    animation: movingbox 5s linear infinite;
+    border-radius: 50%;
+}
+
+/*@keyframes movingbox{*/
+/*    0% { left: 80%; top: 20%; }*/
+/*    25% { left: 20%; top: 20%; }*/
+/*    50% { left: 20%; top: 60%; }*/
+/*    75% { left: 80%; top: 60%; }*/
+/*    100% { left: 80%; top: 20%; }*/
+/*}*/
+
+@keyframes movingbox{
+    0% { left:80%; transform: rotate(0deg); }
+    50% { left: 0%; transform: rotate(-180deg); }
+    100% { left:80%; transform: rotate(-360deg); }
+}
